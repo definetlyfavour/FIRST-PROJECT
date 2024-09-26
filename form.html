@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <style>
+            body{
+            background-color: rgb(249, 234, 234);
+        }
+        </style>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <title>Form</title>
+    </head>
+
+<body>
+    <main>
+        <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><b>Welcome to  Now And Wow</b></h2>
+        <h4><b>Please fell this form to register</b></h4>
+        <form action="Index.html">
+            <label for="Email">*Email</label>
+            <input type="email" id="Email" name="Email" required></br></br>
+            <label for="Name">*Full Name</label>
+            <input type="text" id="Name" name="Name" required></br></br>
+            <label for="Username">*Username</label>
+            <input type="text" id="Username" name="Username" required></br></br>
+            <label for="Password">*Password</label>
+            <input type="password" id="Password" name="Password" required></br></br>
+            <label for="Gender">*Select Your Gender</label>
+            <select name="Gender" id="Gender"> 
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select></br></br>
+            <label for="Birthdaytime">*Birthday</label>
+            <input type="datetime-local" id="Birthdaytime" name="Birthdaytime"></br></br>
+            <fieldset>
+                <legend>Which One Do You Prefer</legend>
+                <label for="Music">Music</label>
+                <input type="radio" id="Music" name="Music">
+                <label for="Movie">Movie</label>
+                <input type="radio" id="Movie" name="Movie">
+                <label for="Both">Both</label>
+                <input type="radio" id="Both" name="Both">
+            </fieldset></br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>

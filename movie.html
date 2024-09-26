@@ -1,87 +1,129 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+    <title>Movie Page</title>
     <style>
-        body{
+        /* Body background color */
+        body {
             background-color: rgb(249, 234, 234);
         }
-        .center{
+        
+        /* Centering elements */
+        .center {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 30%;
         }
+        
+        /* Dropdown button styling */
         .dropbtn {
-background-color: #4CAF50;
-color: white;
-padding: 16px;
-font-size: 16px;
-border: none;
-cursor: pointer;
-}
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
 
-.dropdown {
-position: relative;
-display: inline-block;
-}
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
+        /* Dropdown content styling (initially hidden) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
 
-.dropdown-content a {
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-}
+        /* Links within the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+        /* Hover effect for dropdown links */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
 
-.dropdown:hover .dropdown-content {
-display: block;
-}
+        /* Show dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
-.dropdown:hover .dropbtn {
-background-color: #3e8e41;
-}
-.dropdown-content {
-right: 100;
-}
-img {
-border: 5px solid #555;
-}
-</style>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
-    <title>Movie Page</title>
+        /* Change dropdown button color on hover */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        /* Image border styling */
+        img {
+            border: 5px solid #555;
+        }
+    </style>
 </head>
 <body>
+    <!-- Dropdown menu for navigation -->
     <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
-        <a href="music.html">MUSIC NEWS</a>
-        <a href="Index.html">MAIN PAGE</a>
+            <a href="music.html">MUSIC NEWS</a>
+            <a href="Index.html">MAIN PAGE</a>
         </div>
-</div>
-<header>
-    <h2 style="text-align: center; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;"><b>Now And Wow</b></h2>
-    <h1><b><mark style="background-color:aquamarine;">&apos;Thunderbolts&apos; Trailer: Florence Pugh & Sebastian Stan Among Cast For Marvel Action Pic</mark></b></h1>
-    <img src="images/plane thunderbolt.jpg" width="500" height="300">
-    <iframe width="400" height="315" src="https://www.youtube.com/embed/v-94Snw-H4o?si=hCX_FPNPczqilwl_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-    picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p><b>Here's the first trailer for the marvel movie thunderbolts, which is opening in theaters on may 2025</b></p>
-    <p><b>Video is directed by Jake Schreier and stars Florence Pugh, Harrison Ford, Geraldine Viswanathan, 
-    Olga Kurylenko, Wyatt Russell and Hannah John-Kamen.</b></p></br>
-    <h3><mark style="background-color: aquamarine;">&apos;Transformers One&apos; Loses to &apos;Beetlejuice Beetlejuice&apos; in Surprise Upset</mark> </h3>
-    <img src="images/transformers.jpg" width="500" height="300">
-    <p><b>Paramount and Hasbro Entertainment&apos;s Transformers One was expected to open to at least $30 million to $35 million in North America, more than enough to top the chart. Instead,
-    it came in at an an estimated $25 million from 3,978 theaters versus an estimated 
-    $26 million from 4,172 locations for Warner Bros.&apos; Beetlejuice sequel, which is now in is third weekend.</b></p>
-</header>
+    </div>
+    
+    <!-- Header section with title and subtitle -->
+    <header>
+        <h2 style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+            <b>Now And Wow</b>
+        </h2>
+        <h1>
+            <b><mark style="background-color:aquamarine;">&apos;Thunderbolts&apos; Trailer: Florence Pugh & Sebastian Stan Among Cast For Marvel Action Pic</mark></b>
+        </h1>
+    </header>
+    
+    <!-- Figure section for the Thunderbolts trailer -->
+    <figure>
+        <img src="images/plane thunderbolt.jpg" width="500" height="300" alt="Thunderbolts movie poster">
+        
+        <!-- YouTube trailers embedded -->
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/v-94Snw-H4o?si=hCX_FPNPczqilwl_" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/As-vKW4ZboU?si=P2xDaW5PIS_67E5O" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <figcaption>
+            <p><b>Here's the first trailer for the Marvel movie Thunderbolts, which is opening in theaters in May 2025.</b></p>
+            <p><b>The video is directed by Jake Schreier and stars Florence Pugh, Harrison Ford, Geraldine Viswanathan, Olga Kurylenko, Wyatt Russell, and Hannah John-Kamen.</b></p>
+        </figcaption>
+    </figure>
+    
+    <!-- Section for another movie news item -->
+    <h3><mark style="background-color: aquamarine;">&apos;Transformers One&apos; Loses to &apos;Beetlejuice Beetlejuice&apos; in Surprise Upset</mark></h3>
+    
+    <figure>
+        <img src="images/transformers.jpg" width="500" height="300" alt="Transformers One movie poster">
+        <figcaption>
+            <p><b>Paramount and Hasbro Entertainment's Transformers One was expected to open to at least $30 million to $35 million in North America, more than enough to top the chart. Instead, it came in at an estimated $25 million from 3,978 theaters versus an estimated $26 million from 4,172 locations for Warner Bros.' Beetlejuice sequel, which is now in its third weekend.</b></p>
+        </figcaption>
+    </figure>
+    <article>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-33f6d3d1-7f50-4294-acb0-d25630a28a33" data-elfsight-app-lazy></div>
+    </article>
 </body>
+</html>

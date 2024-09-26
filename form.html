@@ -12,35 +12,39 @@
     </head>
 
 <body>
-    <main>
-        <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><b>Welcome to  Now And Wow</b></h2>
-        <h4><b>Please fell this form to register</b></h4>
+    <header>
+    <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><b>Welcome to  Now And Wow</b></h2>
+    <h4><b>Please fell this form to register</b></h4>
+    </header>
+    <article>
         <form action="Index.html">
-            <label for="Email">*Email</label>
+            <fieldset><!--This is a box that holds all the related inputs and the radio buttons-->
+            <label for="Email">*Email</label><!--This is for the email -->
             <input type="email" id="Email" name="Email" required></br></br>
-            <label for="Name">*Full Name</label>
+            <label for="Name">*Full Name</label><!--This is for the Users Full Name-->
             <input type="text" id="Name" name="Name" required></br></br>
-            <label for="Username">*Username</label>
+            <label for="Username">*Username</label><!--This is for their preffered username -->
             <input type="text" id="Username" name="Username" required></br></br>
-            <label for="Password">*Password</label>
+            <label for="Password">*Password</label><!--This is for the required password-->
             <input type="password" id="Password" name="Password" required></br></br>
-            <label for="Gender">*Select Your Gender</label>
+            <label for="Gender">*Select Your Gender</label><!--This involves checkboxes for the genders, so you can select one-->
             <select name="Gender" id="Gender"> 
                 <option value="Female">Female</option>
                 <option value="Male">Male</option>
             </select></br></br>
-            <label for="Birthdaytime">*Birthday</label>
+            <label for="Birthdaytime">*Birthday</label><!--This is for the Birthday of the user-->
             <input type="datetime-local" id="Birthdaytime" name="Birthdaytime"></br></br>
-            <fieldset>
+            <fieldset><!--This is a checkbox for your preferred taste, either music or movie-->
                 <legend>Which One Do You Prefer</legend>
-                <label for="Music">Music</label>
+                <label for="Music">Music</label><!--This is the label for music-->
                 <input type="radio" id="Music" name="Music">
                 <label for="Movie">Movie</label>
-                <input type="radio" id="Movie" name="Movie">
+                <input type="radio" id="Movie" name="Movie"><!--This is the label for movie-->
                 <label for="Both">Both</label>
-                <input type="radio" id="Both" name="Both">
+                <input type="radio" id="Both" name="Both"><!--This is the label for if you prefer both-->
             </fieldset></br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit"><!--The input for my submit-->
+        </fieldset>
         </form>
-    </main>
+    </article>
 </body>

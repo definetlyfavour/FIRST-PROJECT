@@ -8,92 +8,139 @@ Date last Modified:
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <!-- 
+    This holds the style for my website, including colors, font sizes, positions, 
+    and the functionality of my dropdown menu. The CSS part of my webpage.
+    -->
     <style>
-        body{
-            background-color: rgb(249, 234, 234);
+        body {
+            background-color: rgb(249, 234, 234); /* Set background color */
         }
-        .center{
-            display: block;
-            margin-left: auto;
+        .center {
+            display: block; /* Center elements */
+            margin-left: auto; /* Automatic margin for centering */
             margin-right: auto;
-            width: 30%;
+            width: 30%; /* Set width */
         }
         .dropbtn {
-background-color: #4CAF50;
-color: white;
-padding: 16px;
-font-size: 16px;
-border: none;
-cursor: pointer;
-}
+            background-color: #4CAF50; /* Button color */
+            color: white; /* Button text color */
+            padding: 16px; /* Button padding */
+            font-size: 16px; /* Button font size */
+            border: none; /* No border */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
 
-.dropdown {
-position: relative;
-display: inline-block;
-}
+        .dropdown {
+            position: relative; /* Position for dropdown */
+            display: inline-block; /* Display inline */
+        }
 
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
+        .dropdown-content {
+            display: none; /* Hide dropdown content initially */
+            position: absolute; /* Position dropdown content */
+            background-color: #f9f9f9; /* Background color */
+            min-width: 160px; /* Minimum width */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+            z-index: 1; /* Layering */
+        }
 
-.dropdown-content a {
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-}
+        .dropdown-content a {
+            color: black; /* Link color */
+            padding: 12px 16px; /* Link padding */
+            text-decoration: none; /* No underline */
+            display: block; /* Block display */
+        }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+        /* Hover effect for dropdown links */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1; /* Change background on hover */
+        }
 
-.dropdown:hover .dropdown-content {
-display: block;
-}
+        /* Show dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block; /* Display dropdown on hover */
+        }
 
-.dropdown:hover .dropbtn {
-background-color: #3e8e41;
-}
-.dropdown-content {
-right: 100;
-}
-</style>
-<meta charset="utf-8"/>
-<meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        /* Change button color on hover */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41; /* Darker green on hover */
+        }
 
-<title>Now and WOW</title>
+        .dropdown-content {
+            right: 100; /* Position adjustments (if needed) */
+        }
+    </style>
+    
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+    <title>Now and WOW</title> <!-- Page title -->
 </head>
 <body>
-    <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-        <a href="music.html">MUSIC NEWS</a>
-        <a href="movie.html">MOVIE NEWS</a>
+    <nav>
+        <!-- This holds the links to my other webpages -->
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="music.html">MUSIC NEWS</a>
+                <a href="movie.html">MOVIE NEWS</a>
+            </div>
         </div>
-</div>
-    <header>
-        <h4 style="color: black; text-align:left;" >Newsletter</h4>
-        <h2 style="text-align: center;"><b><mark style="background-color:rgb(248, 221, 185) ;">
-            Celebrity Scoop</mark></b></h2>
-        <h1 style="color:black; text-align: center; 
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Now >and Wow</h1>
-        <p style="text-align: center; font-family: 'Times New Roman', Times, serif;">
-        <b>RECENT NEWS :Diddy Promises No Female Visitors If Released On Bail</b></p>
-        <p style="text-align: center ; font-family: 'Times New Roman', Times, serif;"><b>RECENT NEWS :Justin and Hailey Bieber Are Even Move In Love Since Welcoming Baby Jack </b></p>
-        <iframe width="300" height="300" src="https://style.me/" ></iframe> &nbsp;
-        <img src="images/Diddy.jpg" height="300" width="300" >&nbsp;
-        <img src="images/justin and hailey.jpg" height="300" width="300">
-        <p style="text-align: center;"><b>Get The Latest Celebrity News and Entertainment News, Including pictures, 
-        Articles And So Much More From Now and Wow</b> </p>
-        <img src="images/justin 2.jpg" height="300" width="300" title="The couple announced the arrival of son Jack Blues Bieber on 
-        Aug 23th As Love Is In The Air For The Biebers And Their Family Of Three " />
-    <!-- <iframe src="https://shorturl.at/UygM1 "width="300" height="300"></iframe>-->
-    <br/>
-    </header>
-    <main>
+    </nav>
 
-    </main>
+    <header>
+        <!-- This involves headers, paragraphs, and navigation links -->
+        <h4 style="color: black; text-align: left;"><u>Newsletter</u></h4>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-9401136d-a3b1-46e5-aa5c-9ef164d5bc75" data-elfsight-app-lazy></div>
+        
+        <h2 style="text-align: center;">
+            <b><mark style="background-color: rgb(248, 221, 185);"><i>Celebrity Scoop</i></mark></b>
+        </h2>
+        
+        <h1 style="color: black; text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+            Now and Wow
+        </h1>
+        
+        <p style="text-align: center;">
+            <b>Get The Latest Celebrity News and Entertainment News, Including pictures, 
+            Articles And So Much More From Now and Wow</b>
+        </p>
+        
+        <p style="text-align: center; font-family: 'Times New Roman', Times, serif;">
+            <b>RECENT NEWS: Diddy Promises No Female Visitors If Released On Bail</b>
+        </p>
+        
+        <p style="text-align: center; font-family: 'Times New Roman', Times, serif;">
+            <b>RECENT NEWS: Justin and Hailey Bieber Are Even More In Love Since Welcoming Baby Jack</b>
+        </p>
+    </header>
+
+    <figure>
+        <!-- Semantic tag holding images of Diddy and the Biebers with captions -->
+        <iframe width="400" height="300" src="https://style.me/" title="Celebrity Style" ></iframe> &nbsp;
+        <img src="images/Diddy.jpg" height="300" width="400" alt="Diddy image">&nbsp;
+        <img src="images/justin and hailey.jpg" height="300" width="400" alt="Justin and Hailey Bieber image">
+        
+        <figcaption>
+            <b>The Latest Information about Diddy and the Bieber family</br><br/>
+            According to court filings, Combs' legal team has proposed that if 
+            the 54-year-old rapper is granted bail, a security firm monitoring his Miami home will submit daily logs of visitors to the authorities. 
+            Only family, close friends, and property staff would be allowed entry.<br/><br/>
+            On Friday, Aug. 23, the couple announced the arrival of their baby boy, Jack Blues Bieber — 
+            continuing a sweet Bieber family tradition of naming him with the initials &apos;JB.&apos; 
+            "WELCOME HOME JACK BLUES BIEBER,” Justin, 30, wrote in a post on Instagram 
+            while sharing a close-up shot of the baby's foot. Hailey, 27, reshared the post on her Instagram Stories, adding a bear and blue heart emoji.
+            </b>
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/justin 2.jpg" height="300" width="300" 
+            title="The couple announced the arrival of son Jack Blues Bieber on Aug 23rd. Love Is In The Air For The Biebers And Their Family Of Three." alt="Justin and Hailey with baby Jack"/>
+    </figure>
+
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-66176247-6e6d-4888-836d-4af0a9387e07" data-elfsight-app-lazy></div>
 </body>
+</html>

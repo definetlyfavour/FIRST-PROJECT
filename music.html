@@ -2,73 +2,157 @@
 <html lang="en-us">
 <head>
     <style>
-        body{
+        /* Basic body styling */
+        body {
             background-color: rgb(249, 234, 234);
         }
+        
+        /* Image border styling */
         img {
-border: 5px solid #555;
-}
-.center{
+            border: 5px solid #555;
+        }
+        
+        /* Center alignment for elements */
+        .center {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 30%;
         }
+        
+        /* Dropdown button styling */
         .dropbtn {
-background-color: #4CAF50;
-color: white;
-padding: 16px;
-font-size: 16px;
-border: none;
-cursor: pointer;
-}
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
 
-.dropdown {
-position: relative;
-display: inline-block;
-}
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
+        /* Hidden dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
 
-.dropdown-content a {
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-}
+        /* Dropdown links styling */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+        /* Hover effects for dropdown links */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
 
-.dropdown:hover .dropdown-content {
-display: block;
-}
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
-.dropdown:hover .dropbtn {
-background-color: #3e8e41;
-}
-.dropdown-content {
-right: 100;
-}
-img {
-border: 5px solid #555;
-}
+        /* Change dropdown button color on hover */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        /* Ensuring the dropdown aligns correctly */
+        .dropdown-content {
+            right: 100; /* This value seems incorrect; should probably be removed */
+        }
     </style>
 </head>
 <body>
-    <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-        <a href="movie.html">MOVIE NEWS</a>
-        <a href="Index.html">MAIN PAGE</a>
+    <!-- Navigation with dropdown menu -->
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="movie.html">MOVIE NEWS</a>
+                <a href="Index.html">MAIN PAGE</a>
+            </div>
         </div>
-</div>
-    <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">Now And Wow</h2>
-    <h2 style="text-align: center;"><b><mark style="background-color:aquamarine ;">Musicians Who Have Opened Up About Their Mental Health Struggles</mark></b></h2>
+    </nav>
+    
+    <!-- Header section with main title and subtitle -->
+    <header>
+        <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">
+            Now And Wow
+        </h2>
+        <h2 style="text-align: center;">
+            <b><mark style="background-color:aquamarine;">
+            Musicians Who Have Opened Up About Their Mental Health Struggles</mark></b>
+        </h2>
+    </header>
+    
+    <!-- Figure section with images and captions -->
+    <figure>
+        <img src="images/celebrities health.jpg" width="600" height="450" alt="Celebrities discussing health"/>
+        <img src="images/Jennifer hudson.jpg" width="600" height="450" alt="Jennifer Hudson"/>
+        <figcaption>
+            <p><b>For too long, many people — including musicians — have silently battled mental health issues, putting on a happy face for the rest of the world.</b></p>
+            <p><b>But things have been changing. In recent years, many artists from across multiple genres have used their platforms to speak out in the hopes of removing misconception from everything from depression to bipolar disorder and more by opening up about their own struggles and methods for coping.</b></p>
+        </figcaption>
+    </figure>
+
+    <!-- Section for highlighting a specific artist and album -->
+    <header>
+        <h2><b><mark style="background-color: aquamarine;">Born In Wild</mark></b></h2>
+        <img src="images/tems.jpg" width="400" height="400" alt="Tems"/>
+        <p><b>Tems, an R&B artist, made an album named Born In Wild, which is one of the best R&B albums of 2024.</b></p>
+        <br/>
+        <h2><b><mark style="background-color: aquamarine;">The Best Album In History</mark></b></h2>
+    </header>
+
+    <!-- Article section containing a table of albums -->
+    <article>
+        <table style="width: 100%;">
+            <tr>
+                <th>Genre</th>
+                <th>Best Album</th>
+                <th>Artist</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>R&B</td>
+                <td>Lives at the Apollo</td>
+                <td>James Brown</td>
+                <td>1963</td>
+            </tr>
+            <tr>
+                <td>Hip Hop</td>
+                <td>Ready To Die</td>
+                <td>The Notorious B.I.G</td>
+                <td>1994</td>
+            </tr>
+            <tr>
+                <td>Gospel</td>
+                <td>Song of My People</td>
+                <td>Paul Robeson</td>
+                <td>1925</td>
+            </tr>
+            <tr>
+                <td>Afrobeats</td>
+                <td>Mr Money With the Vibe</td>
+                <td>Asake</td>
+                <td>2022</td>
+            </tr>
+        </table>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-bc1638ea-a72f-421c-b831-6c87c0808acf" data-elfsight-app-lazy></div>
+    </article>
 </body>
+</html>
